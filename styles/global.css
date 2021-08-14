@@ -1,0 +1,43 @@
+* {
+  transition: 0.3s;
+  font-family: "Recursive", sans-serif;
+}
+body {
+  padding: 0px !important;
+  margin: 0px !important;
+}
+:root {
+  --background-color: #edeaef !important;
+  --theme-color: #460f6b !important;
+  --theme-color2: #f09d50 !important;
+  --theme-color-dark: #241130 !important;
+  --theme-color-accent: #cdb3db !important;
+}
+html {
+  height: 100vh;
+  background-color: var(--background-color);
+}
+
+/* =================== COLORS =============================== */
+.bg-theme {
+  background-color: var(--theme-color) !important;
+}
+.bg-theme-dark {
+  background-color: var(--theme-color-dark) !important;
+}
+.text-theme {
+  color: var(--theme-color) !important;
+}
+.text-muted {
+  color: #222222;
+}
+.bg-white {
+  background-color: white !important;
+}
+.bg-accent {
+  background-color: var(--theme-color-accent);
+}
+/* ============================================================= */
+.shadow {
+  box-shadow: -9px 11px 40px -9px rgba(189, 160, 220, 0.75) !important;
+}

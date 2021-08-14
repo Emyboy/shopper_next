@@ -14,8 +14,11 @@ class MyDocument extends Document {
 
   render() {
     return (
-      <Html className="js sizes websockets customelements history postmessage webworkers picture pointerevents webanimations webgl srcset flexbox cssanimations csscolumns csscolumns-width csscolumns-span csscolumns-fill csscolumns-gap csscolumns-rule csscolumns-rulecolor csscolumns-rulestyle csscolumns-rulewidth csscolumns-breakbefore csscolumns-breakafter csscolumns-breakinside">
+      <Html>
         <Head />
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin={'https://fonts.gstatic.com'} />
+        <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@300;800&display=swap" rel="stylesheet"/>
         <body>
           <Main />
           <NextScript />
