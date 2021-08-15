@@ -1,47 +1,44 @@
-import React, { ReactElement } from "react";
-import styled from "styled-components";
-import { HiOutlineMenuAlt2 } from "react-icons/hi";
-import { FaRegUser } from "react-icons/fa";
-import { BiSearchAlt } from "react-icons/bi";
+import React, { ReactElement, useState } from "react";
+import { FaUserAlt } from "react-icons/fa";
+import { ImCart } from "react-icons/im";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { _Header, IconBtn } from "./Header.styles";
+import SearchInput from "../SearchInput/SearchInput";
+import { SearchResults } from "../SearchInput/SearchInput.styles";
 
 interface Props {
   toggleSideNav: Function;
 }
 
-export const _Header = styled.div`
-  background-color: white;
-  padding: 10px;
-  display: flex;
-  justify-content: space-between;
-`;
-
-export const IconBtn = styled.button`
-  display: block;
-  height: 40px;
-  width: 40px;
-  border-radius: 50%;
-  border: 1px solid ${(props) => props.theme.accent_color};
-  cursor: pointer;
-  background-color: white;
-  svg {
-    color: ${(props) => props.theme.theme_color};
-  }
-`;
-
 export default function Header({ toggleSideNav }: Props): ReactElement {
+  const [keyword, setKeyword] = useState('');
+  const handleKeyworkSearch = (e: React.ChangeEvent) => {
+    setKeyword((e.target as HTMLTextAreaElement).value);
+  };
+
   return (
-    <_Header className="shadow">
-      <IconBtn onClick={toggleSideNav}>
-        <HiOutlineMenuAlt2 />
-      </IconBtn>
-      <div style={{ display: "flex" }}>
-        <IconBtn>
-          <BiSearchAlt />
-        </IconBtn>
-        <IconBtn style={{ marginLeft: "10px" }}>
-          <FaRegUser />
-        </IconBtn>
-      </div>
-    </_Header>
+    <>
+      <_Header className="shadow">
+        <div style={{ alignSelf: "center" }}>
+          <IconBtn onClick={() => toggleSideNav()}>
+            <GiHamburgerMenu />
+          </IconBtn>
+        </div>
+        <SearchInput onChange={handleKeyworkSearch} />
+        <div style={{ display: "flex", alignItems: "center" }}>
+          <IconBtn>
+            <ImCart />
+          </IconBtn>
+          <IconBtn style={{ marginLeft: "10px" }}>
+            <FaUserAlt />
+          </IconBtn>
+        </div>
+      </_Header>
+      <SearchResults keyword={keyword}>
+        <section>
+          <h3>{keyword}</h3>
+        </section>
+      </SearchResults>
+    </>
   );
 }

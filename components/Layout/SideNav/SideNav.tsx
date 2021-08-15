@@ -8,7 +8,7 @@ import {
 } from "./SideNav.styled";
 
 export interface SideNavProps {
-  readonly show: boolean;
+  show: boolean;
   toggleSideNav: Function;
 }
 
@@ -20,7 +20,7 @@ export default function SideNav({
     <SideNavComponent className="shadow" show={show}>
       <SideNavHeading>
         <h6>Menu</h6>
-        <IoClose size={30} onClick={toggleSideNav} />
+        <IoClose size={30} onClick={() => toggleSideNav()} />
       </SideNavHeading>
       <EachNavItem href="/">
         <BiHomeCircle />
