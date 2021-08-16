@@ -37,7 +37,8 @@ export const SearchResults = styled.div`
     rgba(0, 0, 0, 0.06766456582633051) 70%,
     rgba(136, 136, 136, 0.0760679271708683) 88%,
     rgba(0, 0, 0, 0.227328431372549) 100%
-  );
+    );
+    z-index: 7;
   section {
     background: white;
     width: 90vw;

@@ -3,9 +3,9 @@ import styled from "styled-components";
 export const _Header = styled.div`
   background-color: ${props => props.theme.accent_color};
   padding: 10px;
-  display: flex;
-  justify-content: space-between;
   z-index: 10;
+  justify-content: space-between;
+  display: flex;
 `;
 
 export const IconBtn = styled.button`
@@ -16,6 +16,7 @@ export const IconBtn = styled.button`
   border: 1px solid ${(props) => props.theme.accent_color};
   cursor: pointer;
   background-color: white;
+  margin-top: 2px;
   &:hover {
     border: 1px solid ${(props) => props.theme.theme_color};
   }

@@ -29,7 +29,7 @@ html {
   color: var(--theme-color) !important;
 }
 .text-muted {
-  color: #222222;
+  color: #572222;
 }
 .bg-white {
   background-color: white !important;
@@ -37,7 +37,17 @@ html {
 .bg-accent {
   background-color: var(--theme-color-accent);
 }
-/* ============================================================= */
+/* =====================================W======================== */
 .shadow {
   box-shadow: -9px 11px 40px -9px rgba(189, 160, 220, 0.75) !important;
 }
+.mobile-hide {
+  display: none;
+}
+
+@media only screen and (max-width: 600px) {
+  .mobile-hide {
+    display: none;
+  }
+}
+
