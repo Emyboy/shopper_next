@@ -29,25 +29,27 @@ export const InputBox = styled.div`
 `;
 
 export const SearchResults = styled.div`
-  height: ${(props:SearchResultTypes) => (props.keyword ? "40vh" : 0)};
+  height: ${(props: SearchResultTypes) => (props.keyword ? "50vh" : 0)};
   display: flex;
   justify-content: center;
   position: fixed;
   width: 100%;
   background: rgb(244, 244, 244);
+  padding-top: 8vh;
   background: linear-gradient(
     0deg,
     rgba(244, 244, 244, 0) 0%,
     rgba(0, 0, 0, 0.06766456582633051) 70%,
     rgba(136, 136, 136, 0.0760679271708683) 88%,
     rgba(0, 0, 0, 0.227328431372549) 100%
-    );
-    z-index: 7;
+  );
+  z-index: 7;
   section {
     background: white;
     width: 90vw;
     border-radius: 0px 0px 20px 20px;
     padding: ${(props) => (props.keyword ? "10px" : 0)};
+    padding-top: ${(props) => (props.keyword ? "4vh" : 0)};
   }
   @media only screen and (max-width: 700px) {
     section {
