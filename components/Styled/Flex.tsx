@@ -7,7 +7,6 @@ interface FlexProps {
 }
 
 const _Row = styled.div`
-  margin-top: 24px;
   display: -ms-flexbox;
   display: -webkit-flex;
   display: flex;

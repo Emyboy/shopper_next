@@ -1,9 +1,9 @@
 import styled from "styled-components";
 import { SideNavProps } from "./SideNav";
 
-export const SideNavComponent = styled.aside<SideNavProps>`
+export const SideNavComponent = styled.aside`
   height: 100%;
-  width: ${(props) => (props.show ? "290px" : "0px")};
+  width: ${(props: SideNavProps) => (props.show ? "290px" : "0px")};
   position: absolute;
   z-index: 1;
   top: 0;

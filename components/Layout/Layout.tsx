@@ -15,7 +15,7 @@ export default function Layout({ children }: Props): ReactElement {
   return (
     <div>
       <Header toggleSideNav={toggleSideNav} />
-      <div>{children}</div>
+      <div style={{ paddingTop: "10vh" }}>{children}</div>
       <SideNav show={showSideNav} toggleSideNav={toggleSideNav} />
     </div>
   );

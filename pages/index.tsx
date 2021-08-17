@@ -10,18 +10,20 @@ export default function index({}: Props): ReactElement {
   return (
     <div>
       <Layout>
-        <Flex alignment='center'>
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-          <ProductCardLG />
-        </Flex>
+        <div className="container">
+          <div className="row justify-content-center">
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+            <ProductCardLG />
+          </div>
+        </div>
       </Layout>
     </div>
   );

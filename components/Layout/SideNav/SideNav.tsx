@@ -9,7 +9,8 @@ import {
 
 export interface SideNavProps {
   show: boolean;
-  toggleSideNav: Function;
+  toggleSideNav?: Function;
+  // children: ReactElement[] | ReactElement;
 }
 
 export default function SideNav({
@@ -20,7 +21,7 @@ export default function SideNav({
     <SideNavComponent className="shadow" show={show}>
       <SideNavHeading>
         <h6>Menu</h6>
-        <IoClose size={30} onClick={() => toggleSideNav()} />
+        {/* <IoClose size={30} onClick={toggleSideNav} /> */}
       </SideNavHeading>
       <EachNavItem href="/">
         <BiHomeCircle />
