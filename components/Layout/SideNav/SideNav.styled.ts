@@ -26,6 +26,9 @@ export const EachNavItem = styled.a`
   text-decoration: none;
   padding: 5%;
   border-radius: 0px 50px 50px 0px;
+  svg {
+    align-self: center;
+  }
   & span {
     margin-left: 20px;
   }

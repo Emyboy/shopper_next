@@ -42,7 +42,7 @@ const AddProductBtn = styled.button`
 
 export default function ProductCardLG({}: Props): ReactElement {
   return (
-    <div className="col-lg-3 col-md-5 col-sm-12">
+    <div className="col-lg-3 col-md-5 col-sm-1">
       <Card>
         <Image src="/woman.jpg" width="300" height="410" />
         <div>
@@ -59,9 +59,6 @@ export default function ProductCardLG({}: Props): ReactElement {
             <AddProductBtn className="shadow-theme">
               <small>Add Item +</small>
             </AddProductBtn>
-            {/* <IconBtn style={{ marginTop: "4px" }}>
-            <FaRegHeart size={17} />
-          </IconBtn> */}
           </Flex>
         </div>
       </Card>
