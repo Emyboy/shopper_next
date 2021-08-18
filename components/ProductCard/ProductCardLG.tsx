@@ -46,7 +46,7 @@ export default function ProductCardLG({}: Props): ReactElement {
       <Card>
         <Image src="/woman.jpg" width="300" height="410" />
         <div>
-          <Link href="/product/mens/f2v4-2v4v-2434v34-v">
+          <Link href="/product/f2v4-2v4v-2434v34-v">
             <a>
               <h2 className="text-muted">
                 This is the product name
