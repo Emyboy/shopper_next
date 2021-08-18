@@ -56,7 +56,7 @@ export default function ProductCardLG({}: Props): ReactElement {
 
           <Flex alignment="space-between">
             <small style={{ alignSelf: "center" }}>$895.00</small>
-            <AddProductBtn className="shadow">
+            <AddProductBtn className="shadow-theme">
               <small>Add Item +</small>
             </AddProductBtn>
             {/* <IconBtn style={{ marginTop: "4px" }}>

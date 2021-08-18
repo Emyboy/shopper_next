@@ -39,7 +39,7 @@ html {
   background-color: var(--theme-color-accent);
 }
 /* =====================================W======================== */
-.shadow {
+.shadow-theme {
   box-shadow: -9px 11px 40px -9px rgba(189, 160, 220, 0.75) !important;
 }
 .mobile-hide {

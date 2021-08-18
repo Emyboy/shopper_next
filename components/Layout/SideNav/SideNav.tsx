@@ -18,7 +18,7 @@ export default function SideNav({
   toggleSideNav,
 }: SideNavProps): ReactElement {
   return (
-    <SideNavComponent className="shadow" show={show}>
+    <SideNavComponent className="shadow-theme" show={show}>
       <SideNavHeading>
         <h6>Menu</h6>
         {/* <IoClose size={30} onClick={toggleSideNav} /> */}

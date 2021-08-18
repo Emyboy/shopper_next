@@ -9,10 +9,11 @@ export const InputBox = styled.div`
   width: 50%;
   padding: 10px;
   display: flex;
+  justify-content: space-between;
   border-radius: 50px;
   background: ${(props) => props.theme.bg_color};
   border: 1px solid gray;
-  height: 60px;
+  height: 40px;
   align-items: center;
   input {
     width: 95%;
@@ -20,6 +21,13 @@ export const InputBox = styled.div`
     border: none;
     outline: none;
     font-size: 20px;
+  };
+  button {
+    height: 30px;
+    width: 30px;
+  }
+  button svg {
+    font-size: 10px;
   }
   @media only screen and (max-width: 700px) {
     input {
@@ -35,7 +43,6 @@ export const SearchResults = styled.div`
   position: fixed;
   width: 100%;
   background: rgb(244, 244, 244);
-  padding-top: 8vh;
   background: linear-gradient(
     0deg,
     rgba(244, 244, 244, 0) 0%,
@@ -49,7 +56,6 @@ export const SearchResults = styled.div`
     width: 90vw;
     border-radius: 0px 0px 20px 20px;
     padding: ${(props) => (props.keyword ? "10px" : 0)};
-    padding-top: ${(props) => (props.keyword ? "4vh" : 0)};
   }
   @media only screen and (max-width: 700px) {
     section {

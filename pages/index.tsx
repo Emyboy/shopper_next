@@ -20,8 +20,6 @@ export default function index({}: Props): ReactElement {
             <ProductCardLG />
             <ProductCardLG />
             <ProductCardLG />
-            <ProductCardLG />
-            <ProductCardLG />
           </div>
         </div>
       </Layout>

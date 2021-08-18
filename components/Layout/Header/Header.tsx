@@ -17,8 +17,8 @@ export default function Header({ toggleSideNav }: Props): ReactElement {
   };
 
   return (
-    <>
-      <_Header className="shadow fixed-top">
+    <div className='fixed-top'>
+      <_Header className="shadow">
         <div style={{ alignSelf: "center" }}>
           <IconBtn onClick={() => toggleSideNav()}>
             <GiHamburgerMenu />
@@ -39,6 +39,6 @@ export default function Header({ toggleSideNav }: Props): ReactElement {
           <h3>{keyword}</h3>
         </section>
       </SearchResults>
-    </>
+    </div>
   );
 }
